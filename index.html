@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wschód Słońca</title>
+    <style>
+        body {
+            background-color: gray;
+            animation: sky 5s linear infinite;
+
+
+
+        }
+
+        .sun {
+            position: fixed;
+            bottom: 15%;
+            left: 10%;
+            width: 15vw;
+            height: 15vw;
+            background-color: darkred;
+            border-radius: 50%;
+            animation: sun 5s infinite linear;
+        }
+
+        .grass {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30vh;
+            background-color: black;
+            animation: grass 5s linear infinite;
+        }
+
+        @keyframes sky {
+            /* 0% {
+                background-color: gray;
+            } */
+
+            20% {
+                background-color: pink;
+
+            }
+
+            50% {
+                background-color: lightblue;
+            }
+
+            80% {
+                background-color: pink;
+            }
+
+            /* 100% {
+                background-color: gray;
+            } */
+        }
+
+        @keyframes grass {
+            /* 0% {
+                background-color: darkslategrey;
+            } */
+
+            20% {
+                background-color: green;
+
+            }
+
+            50% {
+                background-color: greenyellow;
+            }
+
+            80% {
+                background-color: green;
+            }
+
+            /* 100% {
+                background-color: darkslategrey;
+            } */
+        }
+
+        @keyframes sun {
+            0% {
+                bottom: 15%;
+                left: 10%;
+                background-color: darkred;
+            }
+
+            50% {
+                bottom: 45%;
+                background-color: yellow;
+            }
+
+            100% {
+                bottom: 15%;
+                left: 90%;
+                background-color: darkred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+
+</body>
+
+</html>
